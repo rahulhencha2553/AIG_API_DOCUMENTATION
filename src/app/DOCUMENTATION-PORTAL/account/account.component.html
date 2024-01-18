@@ -1,0 +1,75 @@
+
+
+
+<!----------------- ACCOUNT SECTION START  ------------------------>
+
+  <section class="d-flex  pt_top h-100">
+    <!-- SIDEBAR START  -->
+    <div class="sidebar">
+        <ul class="sidebar_list">
+            <li>Overview</li>
+            <li>Help & Support</li>
+        </ul>
+    </div>
+    <!-- MIDDLE CONTENT START -->
+    <div class="create_api scroll_bar">
+        <div class="col-md-11 m-auto">
+            <div class="api_card">
+                <h2 class="fs-30 fw-600 success mb_24">Get started with the AIG API</h2>
+                <h3 class="info fs-18 fw-400 mb_24">New to AIG ? Use our step by step guide to find out how to
+                    tailor AIG to your needs.</h3>
+                <div class="gap_24 d-flex">
+                    <button class="primary_btn"> Start Building</button>
+                    <button class="secondary_btn"> Developer docs</button>
+                </div>
+            </div>
+
+            <div class="api_section">
+
+                <!-- Ecommerce -->
+                <div class="border_bottom mb_50">
+                    <h3 class="fs-24 fw-500 success mb_30">Ecommerce</h3>
+
+                    <div class="copy-text mb_30 position-relative">
+                        <input type="text" class="text fs-17 fw-600 success clipboard" value="10KYPER" readonly/>
+                        <button class="clipboard_icon" (click)="openSnackBar()"><img src="assets/images/svg_img/copy.svg" ></button>
+                    </div>
+
+                    <div class="d-flex gap_20">
+                        <div class="Ecommerce_card">
+                            <h4 class="mb_18 info fs-40 fs-500">0</h4>
+                            <h5 class="mb-0 info fs-16 fs-400">Requests Today</h5>
+                        </div>
+                        <div class="Ecommerce_card">
+                            <h4 class="mb_18 info fs-40 fs-500">0</h4>
+                            <h5 class="mb-0 info fs-16 fs-400">Requests last 7 Days</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- API ki Details -->
+                <div class="border_bottom mb_50">
+                    <h3 class="fs-24 fw-500 success mb_45">API ki Details</h3>
+                    <div class="material-textfield mb_40">
+                        <input placeholder=" " type="text" class="bg_light">
+                        <label>Project name</label>
+                    </div>
+                    <div class="material-textfield mb_40">
+                        <input placeholder=" " type="text" class="bg_light">
+                        <label>Description</label>
+                    </div>
+                    <button class="primary_btn2"> Update</button>
+                </div>
+
+                <!-- Delete Key -->
+                <div class="border_bottom mb_50">
+                    <h3 class="fs-24 fw-500 success mb_20">Delete Key</h3>
+                    <h4 class="fs-18 fw-400 info mb_30">If you choose to delete this API key then it will be removed
+                        from your account and it will no longer be able to call the API. This cannot be undone</h4>
+                    <button class="secondary_btn2" data-bs-target="#delete" data-bs-toggle="modal"> Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
