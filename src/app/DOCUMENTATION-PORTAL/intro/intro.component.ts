@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { AppUtils } from 'src/app/utils/app-utils';
 
 @Component({
@@ -8,7 +8,7 @@ import { AppUtils } from 'src/app/utils/app-utils';
 })
 export class IntroComponent implements AfterViewInit{
   ngAfterViewInit(): void {
-    AppUtils.bodyCssChange();
+    AppUtils.bodyCssChange("");
   }
 
 }
