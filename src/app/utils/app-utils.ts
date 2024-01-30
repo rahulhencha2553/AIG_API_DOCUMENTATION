@@ -9,6 +9,7 @@ export class AppUtils {
     elementId: any = 'body'
   ) {
     var body = document.getElementById(elementId);
+    body!.classList.remove("overflow");
     body!.className = className;
   }
 
