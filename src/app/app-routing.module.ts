@@ -13,6 +13,8 @@ import { CreateApiKeyComponent } from './DOCUMENTATION-PORTAL/create-api-key/cre
 import { OverviewComponent } from './DOCUMENTATION-PORTAL/overview/overview.component';
 import { ApiParametersComponent } from './DOCUMENTATION-PORTAL/api-parameters/api-parameters.component';
 import { PlanPriceComponent } from './DOCUMENTATION-PORTAL/plan-price/plan-price.component';
+import { VerificationPendingComponent } from './DOCUMENTATION-PORTAL/auth/verification-pending/verification-pending.component';
+import { VerificationVerifiedComponent } from './DOCUMENTATION-PORTAL/auth/verification-verified/verification-verified.component';
 
 const routes: Routes = [
   {
@@ -65,6 +67,12 @@ const routes: Routes = [
       },
       {
         path:'plan-price',component:PlanPriceComponent
+      },
+      {
+        path:'pending',component:VerificationPendingComponent
+      },
+      {
+        path:'verified',component:VerificationVerifiedComponent
       }
     ],
   },

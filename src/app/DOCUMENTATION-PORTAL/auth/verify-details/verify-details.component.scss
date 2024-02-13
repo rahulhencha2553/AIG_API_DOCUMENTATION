@@ -1,0 +1,24 @@
+.opaque{
+    display: none !important;
+}
+
+.container {
+    max-width: 1700px !important;
+}
+.overflow {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.scroll_bar {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.scroll_bar::-webkit-scrollbar {
+    display: none;
+  }
+.create_api {
+    padding-top: 48px;
+    width: calc(100% - 360px);
+}

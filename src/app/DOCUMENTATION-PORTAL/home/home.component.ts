@@ -9,7 +9,7 @@ import { AppUtils } from 'src/app/utils/app-utils';
 export class HomeComponent implements AfterViewInit{
 
   ngAfterViewInit(): void {
-    AppUtils.bodyCssChange("auto");
+    //AppUtils.bodyCssChange("auto");
     
   }
 }

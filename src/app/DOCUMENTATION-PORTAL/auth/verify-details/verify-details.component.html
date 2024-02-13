@@ -1,6 +1,5 @@
 
     <!----------------- HERO SECTION START  ------------------------>
-
     <section class="container main_content pt_top verify_scrollbar">
         <div class="col-md-8 progress_card">
             <div class="progress_bar">
@@ -31,16 +30,16 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="verify_intro">
-                    <h1 class="verify_heading mb_24 ">Hey Rashmi ! <br class="d-none d-md-block">
+                    <h1 class="verify_heading mb_24 ">Hey Rahul! <br class="d-none d-md-block">
                         Welcome to AIG</h1>
                     <h3 class="fs-17 fw-400 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor
                         incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor
                         incididunt ut labore </h3>
-                    <button class="apikey_btn fs-19 fw-600 black">Get Your API Key</button>
+                    <button class="apikey_btn fs-19 fw-600 black">Browse Documentation</button>
                     <h4 class="mb-8 fs-20 fw-600 white">Need help?</h4>
-                    <h6 class="mb-0 fs-17 fw-400 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    <h6 class="mb-0 fs-17 fw-400 light">Lorem ipsum dolor sit amet, conse                                                                                                                                                                                                      ctetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore Lorem ipsum.</h6>
                 </div>
             </div>
@@ -192,7 +191,7 @@
                                 <div class="material-textfield mb_30">
                                     <!-- <label>Physical address</label> -->
                                     <select class="" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
+                                        <option selected>Type of business </option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
@@ -282,15 +281,9 @@
                                     <label>Name of director</label>
                                 </div>
                                 <div class="material-textfield mb_30">
-                                    <!-- <label>Physical address</label> -->
-                                    <select class="" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
+                                    <input placeholder=" " type="text" class="bg_light">
+                                    <label>Physical address</label>
                                 </div>
-
                                 <!-- identification tabs section -->
                                 <div>
                                     <h3 class="fs-15 fw-600 black mb_20">Means of identification</h3>
@@ -358,7 +351,7 @@
                                     <div class="editor mb_30">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h3 class="success fs-18 fw-600 mb-0">Personal verification</h3>
-                                            <a href="" class=""><img src="assets/images/svg_img/edit2.svg" ></a>
+                                            <a href="" class=""><img src="assets/images/svg_img/edit2.svg"></a>
                                         </div>
                                     </div>
                                     <div class="editor mb_30">
@@ -385,9 +378,8 @@
                                     </div>
                                     <h5 class="fs-16 fw-400 mb-0 checkbox_text">By submitting this form, you agree to
                                         the <span class="success">AIG Service Agreement</span>,
-                                        to receiving text messages from AIG,
+                                        to receiving text messages from <br>AIG,
                                         and you certify that the information provided is complete and correct.</h5>
-
                                 </div>
                             </div>
                         </section>
@@ -395,9 +387,8 @@
                     <!-- buttons -->
                     <div class="button-container">
                         <!-- <div class="btn btn-prev disabled"> previous step</div> -->
-                        <!-- <div class="verify_btn btn-prev">Continue</div> -->
                         <div class="verify_btn btn-next">Continue</div>
-                        <div class="verify_btn btn-submit" style="display:none;">Submit</div>
+                        <div class="verify_btn btn-submit" style="display:none;" (click)="openPendingPage()">Submit</div>
                     </div>
                 </div>
             </div>

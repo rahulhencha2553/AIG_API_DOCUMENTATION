@@ -9,7 +9,7 @@ import { AppUtils } from 'src/app/utils/app-utils';
 })
 export class AccountComponent implements OnInit{
   ngOnInit(): void {
-    AppUtils.bodyCssChange();
+    //AppUtils.bodyCssChange();
   }
 
   constructor(private snackBar:MatSnackBar){}

@@ -8,7 +8,7 @@ import { AppUtils } from 'src/app/utils/app-utils';
 })
 export class IntroComponent implements AfterViewInit{
   ngAfterViewInit(): void {
-    AppUtils.bodyCssChange("");
+    //AppUtils.bodyCssChange("");
   }
 
 }

@@ -1,34 +1,314 @@
-    <!----------------- CREATE API SECTION START  ------------------------>
+<!----------------- CREATE API SECTION START  ------------------------>
 
-    <section class="d-flex  pt_top h-100">
-        <!-- SIDEBAR START  -->
-      <div class="sidebar">
-          <ul class="sidebar_list">
-              <li>Overview</li>
-              <li>Help & Support</li>
-          </ul>
-      </div>
-       <!-- MIDDLE CONTENT START -->
-      <div class="create_api">
-          <div class="col-md-8 m-auto">
-              <div class="cards">
-                  <div class="api_headings mb_50">
-                      <h2 class="success mb_12 fs-30 fw-500">Create an API key</h2>
-                      <h3 class="grey fs-17 fw-400 mb-0">As part of your plan you can create multiple API keys for no
-                          additional cost.</h3>
-                  </div>
-                 <div class="mb_50">
-                  <div class="material-textfield mb_30">
-                      <input placeholder=" " type="text">
-                      <label>Project name</label>
-                  </div>
-                  <div class="material-textfield">
-                      <input placeholder=" " type="text">
-                      <label>Please tell us a bit more about your project</label>
-                  </div>
-                 </div>
-                 <button class="primary_btn"> Generate API key</button>
-              </div>
-          </div>
-      </div>
-  </section>
+<section class="d-flex  pt_top h-100">
+    <!-- SIDEBAR START  -->
+    <div class="sidebar">
+        <div class="selectSection sidebar_list">
+            <!-- <button type="button" data-number="0" class="plan_heading">Create Api Key</button> -->
+            <button type="button" data-number="1" class="plan_heading">Overview</button>
+            <button type="button" data-number="2" class="plan_heading">Help & Support</button>
+        </div>
+    </div>
+
+
+    <!-- MIDDLE CONTENT START -->
+
+    <!-- Create an API key section -->
+    <div class="create_api content" data-number="0">
+        <div class="col-md-8 m-auto">
+            <div class="cards">
+                <div class="api_headings mb_50">
+                    <h2 class="success mb_12 fs-30 fw-500">Create an API key</h2>
+                    <h3 class="grey fs-17 fw-400 mb-0">As part of your plan you can create multiple API keys for no
+                        additional cost.</h3>
+                </div>
+                <div class="mb_50">
+                    <div class="material-textfield mb_30">
+                        <input placeholder=" " type="text">
+                        <label>Project name</label>
+                    </div>
+                    <div class="material-textfield">
+                        <input placeholder=" " type="text">
+                        <label>Please tell us a bit more about your project</label>
+                    </div>
+                </div>
+                <div class="selectSection">
+                    <button type="button" class="primary_btn" data-number="3"> Generate API key</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overview section -->
+    <div class="create_api scroll_bar content overview_content" data-number="1">
+        <div class="col-md-11 m-auto">
+            <div class="api_card">
+                <h2 class="fs-30 fw-600 success mb_24">Get started with the AIG API</h2>
+                <h3 class="info fs-18 fw-400 mb_24">New to AIG ? Use our step by step guide to find out how
+                    to
+                    tailor AIG to your needs.</h3>
+                <div class="gap_24 d-flex">
+                    <button class="primary_btn"> Start Building</button>
+                    <button class="secondary_btn"> Developer docs</button>
+                </div>
+            </div>
+
+            <div class="api_section">
+
+                <!-- Ecommerce -->
+                <div class="border_bottom mb_50">
+                    <div class="d-flex justify-content-between align-items-center  mb_30">
+                        <h3 class="fs-24 fw-500 success">Total account usage</h3>
+                        <a href="plan&price.html" class="primary_btn">Recharge</a>
+                    </div>
+
+                    <div class="d-flex gap_20" id="myDIV">
+                        <div class="Ecommerce_card total_account actives">
+                            <h4 class="mb_18 fs-40 fw-500 heading">1000</h4>
+                            <h5 class="mb-0  fs-16 fw-400">Requests Today</h5>
+                        </div>
+                        <div class="Ecommerce_card total_account">
+                            <h4 class="mb_18  fs-40 fw-500">0</h4>
+                            <h5 class="mb-0  fs-16 fw-400">Requests Today</h5>
+                        </div>
+                        <div class="Ecommerce_card total_account">
+                            <h4 class="mb_18  fs-40 fw-500">0</h4>
+                            <h5 class="mb-0 fs-16 fw-400">Requests last 7 Days</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Usage by API Key table -->
+
+                <div class="d-flex justify-content-between align-items-center mb_45">
+                    <h2 class="mb-0 fs-24 fw-500 success">Usage by API Key</h2>
+                    <a href="create-API.html" class="primary_btn">Create another key</a>
+                </div>
+                <table class="table mb-0 admin-table" id="dtHorizontalExample" cellspacing="0" width="100%">
+                    <thead>
+                        <tr class="table_heading">
+                            <th scope="col">API Key</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Last 7 Day</th>
+                            <th scope="col">Date Created</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10KYPER</td>
+                            <td>Ecommerce</td>
+                            <td>0</td>
+                            <td>18/12/2023</td>
+                            <td>
+                                <button class="small_btn" type="button">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10KYPER</td>
+                            <td>Ecommerce</td>
+                            <td>0</td>
+                            <td>18/12/2023</td>
+                            <td>
+                                <button class="small_btn" type="button">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10KYPER</td>
+                            <td>Ecommerce</td>
+                            <td>0</td>
+                            <td>18/12/2023</td>
+                            <td>
+                                <button class="small_btn" type="button">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10KYPER</td>
+                            <td>Ecommerce</td>
+                            <td>0</td>
+                            <td>18/12/2023</td>
+                            <td>
+                                <button class="small_btn" type="button">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help & Support section -->
+    <div class="create_api scroll_bar content overview_content" data-number="2">
+        <div class="col-md-11 m-auto">
+            <div class="api_card">
+                <h2 class="fs-30 fw-600 success mb_24">Get started with the AIG API2</h2>
+                <h3 class="info fs-18 fw-400 mb_24">New to AIG ? Use our step by step guide to find out how
+                    to
+                    tailor AIG to your needs.</h3>
+                <div class="gap_24 d-flex">
+                    <button class="primary_btn"> Start Building</button>
+                    <button class="secondary_btn"> Developer docs</button>
+                </div>
+            </div>
+
+            <div class="api_section">
+
+                <!-- Ecommerce -->
+                <div class="border_bottom mb_50">
+                    <div class="d-flex justify-content-between align-items-center  mb_30">
+                        <h3 class="fs-24 fw-500 success">Total account usage</h3>
+                        <a href="plan&price.html" class="primary_btn">Recharge</a>
+                    </div>
+
+                    <div class="d-flex gap_20" id="myDIV">
+                        <div class="Ecommerce_card total_account actives">
+                            <h4 class="mb_18 fs-40 fw-500 heading">1000</h4>
+                            <h5 class="mb-0  fs-16 fw-400">Requests Today</h5>
+                        </div>
+                        <div class="Ecommerce_card total_account">
+                            <h4 class="mb_18  fs-40 fw-500">0</h4>
+                            <h5 class="mb-0  fs-16 fw-400">Requests Today</h5>
+                        </div>
+                        <div class="Ecommerce_card total_account">
+                            <h4 class="mb_18  fs-40 fw-500">0</h4>
+                            <h5 class="mb-0 fs-16 fw-400">Requests last 7 Days</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Usage by API Key table -->
+
+                <div class="d-flex justify-content-between align-items-center mb_45">
+                    <h2 class="mb-0 fs-24 fw-500 success">Usage by API Key</h2>
+                    <a href="create-API.html" class="primary_btn">Create another key</a>
+                </div>
+                <table class="table mb-0 admin-table" id="dtHorizontalExample" cellspacing="0" width="100%">
+                    <thead>
+                        <tr class="table_heading">
+                            <th scope="col">API Key</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Last 7 Day</th>
+                            <th scope="col">Date Created</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10KYPER</td>
+                            <td>Ecommerce</td>
+                            <td>0</td>
+                            <td>18/12/2023</td>
+                            <td>
+                                <button class="small_btn" type="button">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10KYPER</td>
+                            <td>Ecommerce</td>
+                            <td>0</td>
+                            <td>18/12/2023</td>
+                            <td>
+                                <button class="small_btn" type="button">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10KYPER</td>
+                            <td>Ecommerce</td>
+                            <td>0</td>
+                            <td>18/12/2023</td>
+                            <td>
+                                <button class="small_btn" type="button">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10KYPER</td>
+                            <td>Ecommerce</td>
+                            <td>0</td>
+                            <td>18/12/2023</td>
+                            <td>
+                                <button class="small_btn" type="button">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account section -->
+    <div class="create_api scroll_bar content overview_content" data-number="3">
+        <div class="col-md-11 m-auto">
+            <div class="api_card">
+                <h2 class="fs-30 fw-600 success mb_24">Get started with the AIG API</h2>
+                <h3 class="info fs-18 fw-400 mb_24">New to AIG ? Use our step by step guide to find out how to
+                    tailor AIG to your needs.</h3>
+                <div class="gap_24 d-flex">
+                    <button class="primary_btn"> Start Building</button>
+                    <button class="secondary_btn"> Developer docs</button>
+                </div>
+            </div>
+
+            <div class="api_section">
+
+                <!-- Ecommerce -->
+                <div class="border_bottom mb_50">
+                    <h3 class="fs-24 fw-500 success mb_30">AIG USER</h3>
+
+                    <div class="copy-text mb_30 position-relative">
+                        <input type="text" class="text fs-17 fw-600 success clipboard" value="10KYPER" />
+                        <button class="clipboard_icon"><img src="assets/images/svg_img/copy.svg"></button>
+                    </div>
+
+                    <div class="d-flex gap_20">
+                        <div class="Ecommerce_card">
+                            <h4 class="mb_18 info fs-40 fw-500">0</h4>
+                            <h5 class="mb-0 info fs-16 fw-400">Requests Today</h5>
+                        </div>
+                        <div class="Ecommerce_card">
+                            <h4 class="mb_18 info fs-40 fw-500">0</h4>
+                            <h5 class="mb-0 info fs-16 fw-400">Requests last 7 Days</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- API ki Details -->
+                <div class="border_bottom mb_50">
+                    <h3 class="fs-24 fw-500 success mb_45">API key Details</h3>
+                    <div class="material-textfield mb_40">
+                        <input placeholder=" " type="text" class="bg_light">
+                        <label>Project name</label>
+                    </div>
+                    <div class="material-textfield mb_40">
+                        <input placeholder=" " type="text" class="bg_light">
+                        <label>Description</label>
+                    </div>
+                    <button class="primary_btn2"> Update</button>
+                </div>
+
+                <!-- Delete Key -->
+                <div class="border_bottom mb_50">
+                    <h3 class="fs-24 fw-500 success mb_20">Delete Key</h3>
+                    <h4 class="fs-18 fw-400 info mb_30">If you choose to delete this API key then it will be removed
+                        from your account and it will no longer be able to call the API. This cannot be undone</h4>
+                    <button class="secondary_btn2" data-bs-target="#delete-modal" data-bs-toggle="modal"> Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
