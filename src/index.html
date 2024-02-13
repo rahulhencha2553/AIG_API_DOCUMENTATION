@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/svg_img/MapMarker.svg" />
     <!-- CUSTOME CSS  -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- BOOTSTRAP CSS  -->
@@ -38,7 +38,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-  <body id="body" class="mat-typography">
+  <body >
     <app-root></app-root>
     <!-- scripts links -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -51,5 +51,74 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
    
+
+    <!-- TABS BUTTON SCRIPT -->
+    <script>
+      let Buttons = document.querySelectorAll(".selectSection button");
+
+      // loop through the buttons using for..of 
+      for (let button of Buttons) {
+          // listen for a click event 
+          button.addEventListener('click', (e) => {
+              // et = event target
+              const et = e.target;
+              // slect active class
+              const active = document.querySelector(".active");
+              // check for the button that has active class and remove it
+              if (active) {
+                  active.classList.remove("active");
+
+              }
+              // add active class to the clicked element 
+              et.classList.add("active");
+
+              // select all classes with the name content
+              let allContent = document.querySelectorAll('.content');
+
+              // loop through all content classes
+              for (let content of allContent) {
+                  // display the content if the class has the same data-attribute as the button 
+                  alert("hello")
+                  if (content.getAttribute('data-number') === button.getAttribute('data-number')) {
+                      content.style.display = "block";
+                  }
+                  // if it's not equal then hide it.
+                  else {
+                      content.style.display = "none";
+                  }
+              }
+          });
+      }
+
+  </script>
+
+  <!--  CODE COPY SCRIPT -->
+  <script>
+      let copyText = document.querySelector(".copy-text");
+      copyText.querySelector("button").addEventListener("click", function () {
+          let input = copyText.querySelector("input.text");
+          input.select();
+          document.execCommand("copy");
+          copyText.classList.add("active");
+          window.getSelection().removeAllRanges();
+          setTimeout(function () {
+              copyText.classList.remove("active");
+          }, 2500);
+      });
+  </script>
+
+  <!-- // Add active class to the current button (highlight it) -->
+  <script>
+      var header = document.getElementById("myDIV");
+      var btns = header.getElementsByClassName("total_account");
+
+      for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+              var current = document.getElementsByClassName("actives");
+              current[0].className = current[0].className.replace(" actives", "");
+              this.className += " actives";
+          });
+      }
+  </script>
   </body>
 </html>

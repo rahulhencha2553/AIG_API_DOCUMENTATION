@@ -10,7 +10,6 @@ export class OverviewComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.buttonClassActive()
-    AppUtils.bodyCssChange();
   }
 
 

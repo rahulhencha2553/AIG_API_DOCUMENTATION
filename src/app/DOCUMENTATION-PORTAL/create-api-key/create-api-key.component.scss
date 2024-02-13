@@ -1,0 +1,47 @@
+
+.container {
+    max-width: 1700px !important;
+}
+
+.overflow {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.scroll_bar {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.create_api {
+    padding-top: 48px;
+    width: calc(100% - 360px);
+}
+
+.overview_content {
+    display: none;
+}
+
+.sidebar_list .plan_heading.active {
+    border-radius: 2px !important;
+    border: 1px solid transparent !important;
+    background: #FFF !important;
+    padding: 20px !important;
+    width: 100%;
+    text-align: start;
+    position: relative;
+}
+
+.sidebar_list .plan_heading.active::before {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 3px;
+    background-color: #1A3275;
+    left: 0;
+    top: 0;
+}
+
+.nav-link {
+    color: #777;
+}

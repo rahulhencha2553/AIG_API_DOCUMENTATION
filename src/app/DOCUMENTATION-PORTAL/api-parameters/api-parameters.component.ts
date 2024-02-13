@@ -8,7 +8,7 @@ import { AppUtils } from 'src/app/utils/app-utils';
 })
 export class ApiParametersComponent implements OnInit{
   ngOnInit(): void {
- AppUtils.bodyCssChange();
+ //AppUtils.bodyCssChange();
   }
 
   code =` {
